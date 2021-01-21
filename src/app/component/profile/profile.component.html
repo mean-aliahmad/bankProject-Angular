@@ -1,0 +1,29 @@
+<section>
+  <!-- <app-header></app-header> -->
+</section>
+<div class="container">
+  <div class="div-btton">
+    <button class="button-class" [routerLink]="['/terms-and-condition']">Add</button>
+  </div>
+  <table border="1" width="100%">
+    <tr>
+      <td>
+        <table border="1" width="100%">
+          <tr>
+            <th>Name</th>
+            <th>Account Number</th>
+            <th>email</th>
+            <th>Balance</th>
+          </tr>
+          <tr *ngFor="let x of customers">
+            <td>{{x.name}}</td>
+            <td>{{x.account_number}}</td>
+            <td>{{x.email}}</td>
+            <td>INR {{x.balance}}.00</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+</div>

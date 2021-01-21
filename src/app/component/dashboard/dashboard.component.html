@@ -1,0 +1,14 @@
+<div style="padding: 150px;">
+  <!-- <div class> -->
+    <h1>Add Funds</h1>
+    <hr>
+    <label for="psw-repeat"><b>Account Number</b></label>
+    <input type="number" placeholder="Enter Account Number"  required [(ngModel)]="account_number">
+    <label for="psw"><b>Amount</b></label>
+    <input type="number" placeholder="Enter Amount"  required [(ngModel)]="amount">
+    <div class="clearfix">
+      <button type="button" class="cancelbtn" routerLink='/signup'>Cancel</button>
+      <button type="submit" class="signupbtn" (click)="addMoney()">Add Funds</button>
+    </div>
+  <!-- </div> -->
+  </div>

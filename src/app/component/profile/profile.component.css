@@ -1,0 +1,10 @@
+.button-class{
+    background: aqua;
+    border: 2px solid;
+    padding: 7px;
+    width: 68px;
+    margin-bottom: 10px;
+}
+.div-btton{
+    float: right;
+}

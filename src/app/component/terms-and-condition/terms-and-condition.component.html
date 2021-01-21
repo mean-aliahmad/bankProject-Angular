@@ -1,0 +1,21 @@
+<div style="padding: 150px;">
+  <!-- <div class> -->
+    <h1>Add New Customer</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label ><b>Name</b></label>
+    <input type="text" placeholder="Enter Name"  required [(ngModel)]="name">
+    <label ><b>Email</b></label>
+    <input type="text" placeholder="Enter Email"  required [(ngModel)]="email">
+
+    <label for="psw"><b>Mobile Number</b></label>
+    <input type="number" placeholder="Enter Mobile Number"  required [(ngModel)]="mobileNumber">
+
+    <label for="psw-repeat"><b>Account Number</b></label>
+    <input type="number" placeholder="Enter Account Number"  required [(ngModel)]="account_number">
+    <div class="clearfix">
+      <button type="button" class="cancelbtn" routerLink='/profile'>Cancel</button>
+      <button type="submit" class="signupbtn" (click)="getTermsAndCondition()">Add Customer</button>
+    </div>
+  <!-- </div> -->
+  </div>
